@@ -1,5 +1,8 @@
 package sample.cafekiosk.unit;
 
+import sample.cafekiosk.unit.order.Order;
+
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,5 +28,9 @@ public class CafeKiosk {
             totalPrice += beverage.getPrice();    // 장바구니에 담은 모든 음료 값 합계
         }
         return totalPrice;
+    }
+
+    public Order createOrder() {
+        return new Order(LocalDateTime.now(), beverages);
     }
 }
