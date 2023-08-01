@@ -1,5 +1,8 @@
 package sample.cafekiosk.unit;
 
+import sample.cafekiosk.unit.beverage.Americano;
+import sample.cafekiosk.unit.beverage.Latte;
+
 public class CafeKioskRunner {     // 메인함수가 있는 클래스
 
     public static void main(String[] args) {

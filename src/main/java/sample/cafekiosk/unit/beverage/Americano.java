@@ -1,4 +1,6 @@
-package sample.cafekiosk.unit;
+package sample.cafekiosk.unit.beverage;
+
+import sample.cafekiosk.unit.Beverage;
 
 public class Americano implements Beverage {
     @Override
