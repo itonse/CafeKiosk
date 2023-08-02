@@ -38,16 +38,12 @@ public class CafeKiosk {
         beverages.clear();
     }
 
-//    public int calculateTotalPrice() {
-//        int totalPrice = 0;
-//        for (Beverage beverage : beverages) {
-//            totalPrice += beverage.getPrice();    // 장바구니에 담은 모든 음료 값 합계
-//        }
-//        return totalPrice;
-//    }
-
     public int calculateTotalPrice() {
-        return 8500;
+        int totalPrice = 0;
+        for (Beverage beverage : beverages) {
+            totalPrice += beverage.getPrice();    // 장바구니에 담은 모든 음료 값 합계
+        }
+        return totalPrice;
     }
 
     public Order createOrder(LocalDateTime currentDateTime) {
