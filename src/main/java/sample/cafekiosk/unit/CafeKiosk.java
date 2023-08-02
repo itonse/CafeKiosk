@@ -46,8 +46,7 @@ public class CafeKiosk {
         return totalPrice;
     }
 
-    public Order createOrder() {
-        LocalDateTime currentDateTime = LocalDateTime.now();     // 2023-08-01T14:15:30.213
+    public Order createOrder(LocalDateTime currentDateTime) {
         LocalTime currentTime = currentDateTime.toLocalTime();    // 14:15:30.213
         if (currentTime.isBefore(SHOP_OPEN_TIME) || currentTime.isAfter(SHOP_CLOSE_TIME)) {
             throw new IllegalArgumentException("주문 시간이 아닙니다. 관리자에게 문의하세요.");
